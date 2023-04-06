@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  varnish:
+    build:
+      dockerfile: varnish.Dockerfile
+    ports:
+      - "8082:80"
+  server:
+    build:
+      dockerfile: server.Dockerfile
